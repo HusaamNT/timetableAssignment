@@ -27,13 +27,10 @@ const time6am = $("#6am")
 const time7am = $("#7am")
 
 let today = moment();
-$("#currentDate").text(today.format("MMM Do, YYYY"));
+$("#currentDay").text(today.format("[Today is] dddd"));
 
-let todayDate = today.format("[Today is] dddd")
-$("#currentDay").text(todayDate);
-
-let todayTime = today.format("[Current time: ] hh:mm:ss A")
-$("#currentTime").text(todayTime);
-
-
+setInterval(function() {
+    let now = moment().format("MMMM Do, YYYY h:mm:ss a");
+    $('#currentTime').text(now);
+},1000);
 
