@@ -3,8 +3,8 @@ const timeBlockInputs = $(".timeBlockInputs")
 const timeBlockSave = $(".timeBlockSave")
 
 const time9am = $("#9am")
-const time10am = $("#9am")
-const time11am = $("#9am")
+const time10am = $("#10am")
+const time11am = $("#11am")
 const time12pm = $("#12pm")
 const time1pm = $("#1pm")
 const time2pm = $("#2pm")
@@ -25,8 +25,6 @@ const time4am = $("#4am")
 const time5am = $("#5am")
 const time6am = $("#6am")
 const time7am = $("#7am")
-
-
 
 let today = moment();
 $("#currentDate").text(today.format("MMM Do, YYYY"));
